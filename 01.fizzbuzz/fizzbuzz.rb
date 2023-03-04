@@ -12,13 +12,15 @@ num = 0
     if (numCheck %= 3) == 0
         isMultipleOf3 = true
     end
-    
+
     numCheck = num
     if (numCheck %= 5) == 0
         isMultipleOf5 = true
     end
 
     case
+    when isMultipleOf3 && isMultipleOf5
+        puts "FizzBuzz"
     when isMultipleOf3
         puts "Fizz"
     when isMultipleOf5
