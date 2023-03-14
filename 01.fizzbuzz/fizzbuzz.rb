@@ -2,13 +2,11 @@
 
 21.times {|num|
 
-  numCheck = num
-  if (numCheck %= 3) == 0
+  if (num % 3) == 0
     isMultipleOf3 = true
   end
 
-  numCheck = num
-  if (numCheck %= 5) == 0
+  if (num % 5) == 0
     isMultipleOf5 = true
   end
 
