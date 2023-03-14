@@ -1,9 +1,6 @@
 # 01.fizzbuzz
 
-num = 0
-
-20.times do
-  num += 1
+21.times {|num|
 
   numCheck = num
   if (numCheck %= 3) == 0
@@ -16,6 +13,8 @@ num = 0
   end
 
   case
+  when num == 0
+    next
   when isMultipleOf3 && isMultipleOf5
     puts "FizzBuzz"
   when isMultipleOf3
@@ -25,4 +24,4 @@ num = 0
   else
     puts num
   end
-end
+}
